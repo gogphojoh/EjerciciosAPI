@@ -1,0 +1,121 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #ffcc00 0%, #ff3300 100%);
+}
+
+.pokedex {
+    display: flex;
+    width: 900px;
+    height: 550px;
+    border: 5px solid #333;
+    border-radius: 15px;
+    background-color: #f44336;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.left-panel, .right-panel {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.left-panel {
+    border-right: 5px solid #333;
+    background-color: #ffebee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right-panel {
+    background-color: #ffebee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-container {
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-container label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.search-container input {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    flex-grow: 1;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.search-container button:hover {
+    background-color: #45a049;
+}
+
+.pokemon-display {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pokemon-display img {
+    width: 200px;
+    height: 200px;
+    border: 3px solid #333;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.pokemon-stats, .pokemon-types {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pokemon-stats p, .pokemon-types p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.pokemon-types {
+    display: flex;
+    justify-content: center;
+}
+
+.pokemon-types span {
+    margin: 0 5px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #333;
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}

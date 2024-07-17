@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>PokeAPI</title>
+</head>
+<body>
+    <div class="pokedex">
+        <div class="left-panel">
+            <h1>Pokedex</h1>
+            <div class="search-container">
+                <label for="search">Buscar Pokémon:</label>
+                <input type="text" id="search" placeholder="Nombre o ID">
+                <button id="btn-search">Buscar</button>
+            </div>
+            <div class="pokemon-display" id="pokemon-display">
+                <img id="pokemon-img" src="" alt="Imagen del Pokémon">
+                <h2 id="pokemon-name"></h2>
+                <p id="pokemon-number"></p>
+                <p id="pokemon-description"></p>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="pokemon-stats" id="pokemon-stats">
+                <h3>Stats</h3>
+                <p id="pokemon-hp">HP: </p>
+                <p id="pokemon-attack">Ataque: </p>
+                <p id="pokemon-defense">Defensa: </p>
+                <p id="pokemon-speed">Velocidad: </p>
+            </div>
+            <div class="pokemon-types" id="pokemon-types">
+                <h3>Tipos</h3>
+                <!-- Aquí se mostrarán los tipos -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
